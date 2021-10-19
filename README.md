@@ -2,7 +2,7 @@ OpenWrt 源码根目录添加文件 vermagic
 
 echo 68143adfcb7fc62a239c4be112fe40de ./vermagic
 修改 kernel-defaults.mk
-
+'''
 diff --git a/include/kernel-defaults.mk b/include/kernel-defaults.mk
 index cc1e2361be..35ffc1fbba 100644
 --- a/include/kernel-defaults.mk
@@ -14,8 +14,10 @@ index cc1e2361be..35ffc1fbba 100644
 -       grep '=[ym]' $(LINUX_DIR)/.config.set | LC_ALL=C sort | mkhash md5 > $(LINUX_DIR)/.vermagic
 +       cp $(TOPDIR)/vermagic $(LINUX_DIR)/.vermagic
  endef
+'''
 修改 package/kernel/linux/Makefile
 
+'''
 diff --git a/package/kernel/linux/Makefile b/package/kernel/linux/Makefile
 index 39b9e82c27..6ff64b2939 100644
 --- a/package/kernel/linux/Makefile
@@ -28,7 +30,7 @@ index 39b9e82c27..6ff64b2939 100644
 +  STAMP_BUILT:=$(STAMP_BUILT)_$(shell cat $(LINUX_DIR)/.vermagic)
    -include $(LINUX_DIR)/.config
  endif
- 
+''' 
 ![OpenWrt logo](include/logo.png)
 
 OpenWrt Project is a Linux operating system targeting embedded devices. Instead
