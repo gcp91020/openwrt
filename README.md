@@ -1,3 +1,6 @@
+```
+src-git ssrplus https://github.com/gcp91020/helloworld
+
 OpenWrt 源码根目录添加文件 vermagic
 
 echo 68143adfcb7fc62a239c4be112fe40de ./vermagic
@@ -30,7 +33,8 @@ index 39b9e82c27..6ff64b2939 100644
 +  STAMP_BUILT:=$(STAMP_BUILT)_$(shell cat $(LINUX_DIR)/.vermagic)
    -include $(LINUX_DIR)/.config
  endif
-''' 
+```
+
 ![OpenWrt logo](include/logo.png)
 
 OpenWrt Project is a Linux operating system targeting embedded devices. Instead
