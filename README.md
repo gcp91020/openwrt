@@ -5,7 +5,7 @@ https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/kmods/
 OpenWrt 源码根目录添加文件 vermagic
 
 echo 68143adfcb7fc62a239c4be112fe40de ./vermagic
-修改 kernel-defaults.mk
+修改 include/kernel-defaults.mk
 
 - diff --git a/include/kernel-defaults.mk b/include/kernel-defaults.mk
 - index cc1e2361be..35ffc1fbba 100644
