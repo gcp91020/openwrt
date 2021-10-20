@@ -1,5 +1,6 @@
 ```
 src-git ssrplus https://github.com/gcp91020/helloworld
+https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/kmods/
 
 OpenWrt 源码根目录添加文件 vermagic
 
